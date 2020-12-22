@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/VHsymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Symbol" />
+
+    <TextView
+        android:id="@+id/VHname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="@+id/VHlatestprice"
+        app:layout_constraintStart_toStartOf="@+id/VHsymbol"
+        app:layout_constraintTop_toBottomOf="@+id/VHsymbol"
+        tools:text="Company Name" />
+
+    <TextView
+        android:id="@+id/VHlatestprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/VHsymbol"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="135.72" />
+
+    <TextView
+        android:id="@+id/VHchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/VHchangepercent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0.38" />
+
+    <TextView
+        android:id="@+id/VHchangepercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="(0.28%)" />
+</androidx.constraintlayout.widget.ConstraintLayout>
